@@ -75,7 +75,7 @@ module.exports = function (results) {
       var result = {
         title: testTitle,
         fullTitle: suiteName,
-        duration: suiteResult.perfStats.end - suiteResult.perfStats.start,
+        duration: testResult.duration,
         errorCount: testResult.failureMessages.length,
         error: testResult.failureMessages.length ? helpers.formatErrorMessages(testResult.failureMessages) : undefined
       };
