@@ -1,28 +1,27 @@
 {
-  "name": "jest-bamboo-reporter",
-  "version": "1.2.0",
+  "name": "jest-bamboo-test-reporter",
+  "version": "1.2.2",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage"
   },
-  "description": "A reporter for jest which produces a report compatible with Atlassian Bamboo Mocha Test Parser.",
+  "description": "A reporter for jest which produces a report compatible with Atlassian Bamboo Mocha Test Parser with test-level durations.",
   "keywords": [
     "jest",
     "reporter",
     "atlassian",
     "bamboo"
   ],
-  "homepage": "https://github.com/CHECK24/jest-bamboo-reporter",
+  "homepage": "https://github.com/bargar/jest-bamboo-test-reporter",
   "bugs": {
-    "url": "https://github.com/CHECK24/jest-bamboo-reporter/issues"
+    "url": "https://github.com/bargar/jest-bamboo-test-reporter/issues"
   },
   "license": "MIT",
-  "author": "unfall24 <un-sach-dev@check24.de>",
+  "author": "Jeremy Bargar <jeremy.bargar@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CHECK24/jest-bamboo-reporter"
+    "url": "git+https://github.com/bargar/jest-bamboo-test-reporter.git"
   },
-  "dependencies": {},
   "devDependencies": {
     "jest": "~22.4.3",
     "sinon": "~5.0.3"

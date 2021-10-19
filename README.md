@@ -1,11 +1,6 @@
-# jest-bamboo-reporter
+# jest-bamboo-test-reporter
 
-A reporter for jest which produces a report compatible with Atlassian Bamboo Mocha Test Parser.
-
-[![Build Status](https://travis-ci.org/CHECK24/jest-bamboo-reporter.svg?branch=master)](https://travis-ci.org/CHECK24/jest-bamboo-reporter)
-[![npm](https://img.shields.io/npm/v/jest-bamboo-reporter.svg?style=flat-square)](https://www.npmjs.com/package/jest-bamboo-reporter)
-[![npm](https://img.shields.io/david/CHECK24/jest-bamboo-reporter.svg?style=flat-square)](https://www.npmjs.com/package/jest-bamboo-reporter)
-[![npm downloads](https://img.shields.io/npm/dt/jest-bamboo-reporter.svg?style=flat-square)](https://www.npmjs.com/package/jest-bamboo-reporter)
+A reporter for jest which produces a report compatible with Atlassian Bamboo Mocha Test Parser with test-level durations.
 
 Forked from [jest-bamboo-formatter](https://github.com/adalbertoteixeira/jest-bamboo-formatter), with major changes in order to work around Bamboo's naming restrictions:
 
@@ -16,7 +11,7 @@ Forked from [jest-bamboo-formatter](https://github.com/adalbertoteixeira/jest-ba
 ## Installation
 
 ~~~sh
-npm install --save-dev jest-bamboo-reporter
+npm install --save-dev jest-bamboo-test-reporter
 ~~~
 
 ## Usage
@@ -25,7 +20,7 @@ In the jest config file add the path to the module. For example:
 
 ~~~json
 {
-    "testResultsProcessor": "jest-bamboo-reporter"
+    "testResultsProcessor": "jest-bamboo-test-reporter"
 }
 ~~~
 
@@ -62,4 +57,4 @@ JEST_REPORT_FILE="./jest-report.json" jest
 
 ## License
 
-[MIT](https://github.com/CHECK24/jest-bamboo-reporter/blob/master/LICENSE)
+[MIT](https://github.com/bargar/jest-bamboo-test-reporter/blob/master/LICENSE)

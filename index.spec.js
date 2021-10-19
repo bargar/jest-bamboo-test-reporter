@@ -2,7 +2,7 @@ var fs = require('fs');
 var sinon = require('sinon');
 var jestBambooReporter = require('./index');
 
-describe('jest-bamboo-reporter', function () {
+describe('jest-bamboo-test-reporter', function () {
   var jestOutput = JSON.parse(fs.readFileSync(__dirname + '/test-files/jest-output.json', 'utf8'));
   var clock;
 
@@ -29,7 +29,7 @@ describe('jest-bamboo-reporter', function () {
       jestBambooReporter(jestOutput);
       var actualResult = JSON.parse(fs.readFileSync('./test-report.json', 'utf8'));
       var expectedResult = JSON.parse(fs.readFileSync(__dirname + '/test-files/expected-result-with-filename.json', 'utf8'));
-      
+
       expect(actualResult).toEqual(expectedResult);
     } finally {
       delete process.env.JEST_BAMBOO_SUITE_NAME;
